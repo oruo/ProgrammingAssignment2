@@ -1,9 +1,9 @@
 ## Below are two functions that are used to create a special object
 ## that stores a matrix and caches its inverse
 
-## Function that makes and gets cached matrix and its inverse. 
+## makeCacheMatrix function makes and gets cached matrix and its inverse. 
 ## It creates a special vector to set and get the values 
-## of a matrix and of its inverse
+## of the matrix and of its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   iv <- NULL
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Function that calculates the inverse of the special "matrix" 
+## cacheSolve function calculates the inverse of the special "matrix" 
 ## created with makeCacheMatrix above. It first checks to see if the 
 ## inverse of the matrix has already been calculated. If so, it gets 
 ## the inverse from the cache and skips the computation. Otherwise, 
